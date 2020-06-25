@@ -170,5 +170,6 @@ public class Kosmolot {
 	        else System.out.print("klops");
         }
 	    else System.out.print("klops");
+        System.exit(0);
     }
 }
