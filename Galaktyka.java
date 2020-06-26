@@ -26,12 +26,14 @@ public class Galaktyka {
         return str;
     }
     public static void showArray(String[][] str, int w, int s){
+        StringBuffer sb1 = new StringBuffer();
         for(int i =0;i<w;i++){
             for(int j=0;j<s;j++){
-                System.out.print(str[i][j]);
+                sb1.append(str[i][j]);
             }
-            System.out.println("");
+            sb1.append("\n");
         }
+        System.out.print(sb1.toString());
     }
     public static int makeMove (String[][] str, int wielkosc, int opcja, int startx, int starty){
         boolean start = false;
